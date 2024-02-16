@@ -7,12 +7,12 @@ import streamlit as st
 st.title('SMTP Email Sender')
 
 # Input fields
-smtp_server = st.text_input('SMTP Server', value='mx.make-contact.com')
+smtp_server = st.text_input('SMTP Server')
 smtp_port = st.number_input('SMTP Port', value=587)
 smtp_user = st.text_input('SMTP User')
-smtp_password = st.text_input('SMTP Password', type='password')
+smtp_password = st.text_input('SMTP Password')
 from_email = smtp_user
-to_email = st.text_input('To Email', value='justin@sendengage.io')
+to_email = st.text_input('To Email')
 subject = st.text_input('Subject', value='Test Email from Python')
 body = st.text_area('Body', value='This is a test email sent from a Python script.')
 
